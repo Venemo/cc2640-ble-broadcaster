@@ -73,6 +73,10 @@ int main(void) {
     rf_core_boot();
 
     for (;;) {
+    	/* Uncomment the following section for TX PHY tests */
+    	//// Send PHY test TX packets
+    	//rf_core_txtest();
+
     	// Send BLE advertisement
     	rf_core_advertise();
 
